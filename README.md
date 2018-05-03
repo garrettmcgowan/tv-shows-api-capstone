@@ -10,11 +10,11 @@ This app is for two types of users.
 2. Someone who is looking to find out more information about shows similar to their favorite.
 
 ### UI Flow
-![User Flow handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/ui%20flow%201.jpg?raw=true)
-![User Flow handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/ui%20flow%202.jpg?raw=true)
-![User Flow handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/ui%20flow%203.jpg?raw=true)
+![User Flow handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/read-me-images/ui-flow-1.jpg)
+![User Flow handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/read-me-images/ui-flow-2.jpg)
+![User Flow handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/read-me-images/ui-flow-3.jpg)
 ### Wireframe _main
-![Wireframe handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/wireframe%20main.jpg?raw=true)
+![Wireframe handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/read-me-images/wireframe-main.jpg)
 ## Working Prototype
 
 
