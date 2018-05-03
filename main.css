@@ -1,0 +1,44 @@
+body {
+    text-align: center
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0.3);
+    color: white;
+}
+
+.similar {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 25px;
+    color: black
+}
+
+.banner {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 35px;
+    color: white;
+}
+
+.similar-shows {
+    padding-top: 2%;
+}
+
+button {
+    font-size: 25px;
+
+}
+
+input {
+    border: solid grey;
+}
+
+button {
+    border: solid grey;
+    margin: 1%
+}
+
+.intro-section {}
