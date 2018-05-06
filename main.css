@@ -1,44 +1,188 @@
 body {
-    text-align: center
+    background: #f1f6f8;
+    font-family: sans-serif;
 }
 
-header {
+p {
+    color: #524c56;
+    font-size: 130%;
+    line-height: 150%;
+    text-indent: 2%;
+    text-align: justify;
+
+
+}
+
+.main-image {
+    width: 100%;
+    height: 650px;
+    background-image: url(https://images.unsplash.com/photo-1521967906867-14ec9d64bee8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=63f399f203a46024cdee72cd6aa42163&auto=format&fit=crop&w=1350&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.main-image h2 {
     text-align: center;
-    font-size: 50px;
-    background-color: rgba(0, 0, 0.3);
-    color: white;
-}
-
-.similar {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 25px;
-    color: black
-}
-
-.banner {
-    padding-top: 5%;
-    padding-bottom: 5%;
     font-size: 35px;
     color: white;
+    padding-top: 7%;
 }
 
-.similar-shows {
-    padding-top: 2%;
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+form {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+
+}
+
+h2 {
+
+    text-align: center;
+    font-size: 30px
+}
+
+.form {
+    margin-top: 3%
 }
 
 button {
-    font-size: 25px;
+    border: solid lightblue;
+    border-radius: 5px;
 
 }
 
 input {
-    border: solid grey;
+    border: solid lightblue;
+    border-radius: 5px;
 }
 
-button {
-    border: solid grey;
-    margin: 1%
+.one-half {
+    width: 50%;
+    float: left;
+    text-align: justify;
+    height: 400px;
+    padding: 1%;
 }
 
-.intro-section {}
+.one-half img {
+    float: left;
+    padding: 1%;
+}
+
+h3 {
+    padding-left: 1%;
+}
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (max-width: 1024px) {
+    .one-half {
+        width: 100%;
+        height: 500px;
+    }
+    .one-half p {
+        font-size: 120%;
+    }
+
+    .main-image {
+        height: 400px;
+    }
+    .main-image h2 {
+        font-size: 190%
+    }
+    .form-description {
+        font-size: 210%;
+    }
+    form {
+        font-size: 180%;
+    }
+    .one-half img {
+        width: 20%;
+    }
+}
+
+/*ipad potrait*/
+
+@media only screen and (max-width: 768px) {
+    .one-half p {
+        font-size: 110%;
+    }
+    .one-half {
+        height: height: 600px;
+    }
+    .main-image {
+        height: 350px;
+    }
+    .main-image h2 {
+        font-size: 160%
+    }
+    .form-description {
+        font-size: 180%;
+    }
+    form {
+        font-size: 150%;
+    }
+    .one-half img {
+        width: 25%;
+    }
+}
+
+/*iPhone landscape*/
+
+@media only screen and (max-width: 480px) {
+    .one-half p {
+        font-size: 100%;
+    }
+    .one-half {
+        height: height: 600px;
+    }
+    .main-image {
+        height: 250px;
+    }
+    .main-image h2 {
+        font-size: 160%
+    }
+    .form-description {
+        font-size: 150%;
+    }
+    form {
+        font-size: 130%;
+    }
+    .one-half img {
+        width: 35%;
+    }
+}
+
+/*iPhone portrait*/
+
+@media only screen and (max-width: 320px) {
+    .main-image {
+        height: 200px;
+    }
+    .main-image h2 {
+        font-size: 120%;
+    }
+    form {
+        font-size: 115%;
+    }
+    .form-description {
+        font-size: 120%
+    }
+    .one-half img {
+        width: 50%
+    }
+    p {
+        line-height: 120%;
+    }
+    h1 {
+        font-size: 40px
+    }
+}

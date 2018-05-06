@@ -16,7 +16,7 @@ This app is for two types of users.
 ### Wireframe _main
 ![Wireframe handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/read-me-images/wireframe-main.jpg)
 ## Working Prototype
-
+https://garrettmcgowan.github.io/tv-shows-api-capstone/
 
 ## Functionality
 The app's functionality includes:

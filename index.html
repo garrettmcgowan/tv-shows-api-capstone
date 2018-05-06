@@ -3,32 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>What's Now?</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
-    <header class="page-title">
-        <h1>What's Next?</h1>
+    <header>
+         <h1>what's next?</h1>
     </header>
-    <main>
-        <section class="intro-section">
-            <h2 class="banner">Has your favorite show ended?<br><br>let us ease your pain..</h2>
+
+    <section class="main-image">
+        <h2>Has your favorite show ended?<br>lets us ease your pain..</h2>
+    </section>
+    <section class="form">
+        <h2 class="form-description"> Find your new favorite show below! </h2>
+        <form action="search">
+        <input type="text" placeholder="Enter favorite show here">
+        <button>Search</button>
+        </form>
+    </section>
+
+    <section class="result-section">
+        <section class="one-half">
+            <h3>Tv show 1</h3>
+            <p><img src="https://static.tvmaze.com/uploads/images/medium_untouched/152/381152.jpg" alt="Television show poster">This is some choice text about the show that was appended here in this container
+            </p>
         </section>
-        <h2 class="similar">Find similar shows below
-            <form class="similar-shows" action="submit">
-                <input class="input-box" type="text" placeholder="Enter your favorite show">
-                <input class="search-button" type="submit" value="Search" role="button">
-            </form>
-        </h2>
-        <section class="result-section">
-            <ul></ul>
-            <button>More results</button>
-            <button>Home</button>
+
+        <section class="one-half">
+            <h3>Tv show 2</h3>
+            <img src="https://static.tvmaze.com/uploads/images/medium_untouched/152/381152.jpg" alt="Television show poster">
+            <p>This is some choice text about the show that was appended here in this container</p>
         </section>
-    </main>
+
+        <section class="one-half">
+            <h3>Tv show 3</h3>
+            <img src="https://static.tvmaze.com/uploads/images/medium_untouched/152/381152.jpg" alt="Television show poster">
+            <p>This is some choice text about the show that was appended here in this container</p>
+        </section>
+
+        <section class="one-half">
+            <h3>Tv show 4</h3>
+            <img src="https://static.tvmaze.com/uploads/images/medium_untouched/152/381152.jpg" alt="Television show poster">
+            <p>This is some choice text about the show that was appended here in this container</p>
+        </section>
+    </section>
+        <form action="search">
+        <button class="more-results">More results</button>
+        </form>
 </body>
 
 </html>
