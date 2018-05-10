@@ -1,5 +1,11 @@
 //part A: defining global functions variables and objects
 //Step 2: with that input make api call
+function displayError(message) {
+    $("#messageBox span").html(message);
+    $("#messageBox").fadeIn();
+    $("#messageBox").fadeOut(10000);
+};
+
 function getShowsFromApi(userInput) {
     //    console.log('hey');
     let result = $.ajax({
@@ -15,7 +21,7 @@ function getShowsFromApi(userInput) {
         .done(function (result) {
             console.log(result);
             if (result.length == 0) {
-                alert('No results found')
+                displayError('No results found')
             } else {
                 showResultsFromApi(result);
             }
@@ -57,9 +63,9 @@ function showResultsFromApi(result) {
 }
 
 //part B: using global functions variables and objects(triggers)
-
+//when you load the page ...
 $(document).ready(function () {
-    //when you load the page ...
+    $("#messageBox").hide();
     $('.result-section').hide();
 });
 
@@ -73,7 +79,7 @@ $(document).on('submit', '.search-show', function (event) {
     //    console.log(userInput);
     //    validate the input
     if (userInput == "") {
-        alert('Please search for show name')
+        displayError('Please search for show name')
     } else {
         getShowsFromApi(userInput)
     }

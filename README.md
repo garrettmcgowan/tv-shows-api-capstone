@@ -15,6 +15,12 @@ This app is for two types of users.
 ![User Flow handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/read-me-images/ui-flow-3.jpg)
 ### Wireframe _main
 ![Wireframe handwritten draft](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/read-me-images/wireframe-main.jpg)
+### Website Screenshots
+## Landing page screenshot
+![Landing page screenshot](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/read-me-images/landing-page.png)
+## Landing page with results
+![Landing page with results screenshot](https://github.com/garrettmcgowan/tv-shows-api-capstone/blob/master/read-me-images/landing-page-with-results.png)
+
 ## Working Prototype
 https://garrettmcgowan.github.io/tv-shows-api-capstone/
 
