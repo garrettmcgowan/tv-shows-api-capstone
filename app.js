@@ -10,7 +10,7 @@ function getShowsFromApi(userInput) {
     //    console.log('hey');
     let result = $.ajax({
             /* update API end point */
-            url: "http://api.tvmaze.com/search/shows?q=" + userInput,
+            url: "https://api.tvmaze.com/search/shows?q=" + userInput,
             //  data: params,
             dataType: "json",
             /*set the call type GET / POST*/

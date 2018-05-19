@@ -39,4 +39,5 @@ App is built to be responsive across mobile, tablet, laptop, and desktop screen 
 
 ## Development Roadmap
 * In the future, I would like to implement the Tastedive API for tv show suggestions.
-* implement the ability to browse top rated shows from TvMaze API
+* implement the ability to browse top rated shows from TvMaze API.
+* Add in a trigger that will scroll to the result section when the input has been submitted.

@@ -63,6 +63,7 @@ h1 {
     text-align: center;
     font-size: 70px;
     font-family: 'Lobster', cursive;
+    margin: 2%
 }
 
 form {
@@ -135,11 +136,15 @@ input {
 /*ipad lanscape / small laptop*/
 
 @media only screen and (max-width: 1024px) {
+
+
     h1 {
-        font-size: 50px
+        font-size: 380%;
+        margin: 3%;
     }
     .form-description {
-        font-size: 180%;
+        font-size: 200%;
+        margin-top: 5%;
     }
     .one-half {
         width: 100%;
@@ -149,17 +154,21 @@ input {
     }
 
     .main-image {
-        height: 400px;
+        height: 600px;
     }
     .main-image h2 {
         font-size: 190%
     }
 
     form {
-        font-size: 180%;
+        font-size: 200%;
+        margin-top: 5%;
     }
     .one-half img {
         width: 20%;
+    }
+    input {
+        min-height:
     }
 }
 
@@ -171,45 +180,52 @@ input {
     }
 
     h1 {
-        font-size: 300%
+        font-size: 380%;
+        margin: 4%;
     }
     .main-image {
-        height: 300px;
+        height: 400px;
     }
     .main-image h2 {
         font-size: 160%
     }
     .form-description {
-        font-size: 140%;
+        font-size: 150%;
+        margin-top: 10%
     }
     form {
-        font-size: 100%;
+        font-size: 150%;
+        margin-top: 10%;
     }
     .one-half img {
         width: 25%;
     }
+
 }
 
 /*iPhone landscape*/
 
 @media only screen and (max-width: 480px) {
     h1 {
-        font-size: 250%
+        font-size: 300%;
+        margin: 5%
     }
     .one-half p {
         font-size: 100%;
     }
     .main-image {
-        height: 100px;
+        height: 300px;
     }
     .main-image h2 {
-        font-size: 110%
+        font-size: 135%
     }
     .form-description {
-        font-size: 100%
+        font-size: 115%;
+        margin-top: 15%
     }
     form {
-        font-size: 80%
+        font-size: 105%;
+        margin-top: 15%;
     }
 
 }
@@ -218,7 +234,7 @@ input {
 
 @media only screen and (max-width: 320px) {
     .main-image {
-        height: 100px
+        height: 200px
     }
     .main-image h2 {
         font-size: 100%;
@@ -235,10 +251,14 @@ input {
     }
 
     h1 {
-        font-size: 40px
+        font-size: 250%;
+        margin: 6%;
     }
-    .form-description {
+    .form-description h2 {
         font-size: 80%;
+    }
+    input {
+        font-size: 80%
     }
     .one-half p {
         font-size: 75%;
