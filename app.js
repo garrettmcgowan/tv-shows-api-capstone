@@ -39,7 +39,7 @@ function showResultsFromApi(result) {
 
     $.each(result, function (resultKey, resultValue) {
         //create and populate one LI for each of the results ( "+=" means concatenate to the previous one)
-        buildTheHtmlOutput += '<section class="one-half">';
+        buildTheHtmlOutput += '<article role="listbox" class="one-half">';
         buildTheHtmlOutput += '<h3>' + resultValue.show.name + '</h3>';
 
         if (resultValue.show.rating.average == null) {
@@ -55,7 +55,7 @@ function showResultsFromApi(result) {
         }
 
         buildTheHtmlOutput += '<p>' + resultValue.show.summary + '</p>';
-        buildTheHtmlOutput += '</section>';
+        buildTheHtmlOutput += '</article>';
     });
     //use the HTML output to show it in the index.html
     $(".result-section").html(buildTheHtmlOutput);
@@ -81,6 +81,8 @@ $(document).on('submit', '.search-show', function (event) {
     if (userInput == "") {
         displayError('Please search for show name')
     } else {
-        getShowsFromApi(userInput)
+        getShowsFromApi(userInput);
+        $(".show-name").val('');
+
     }
 });

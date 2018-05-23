@@ -4,34 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>What's Next</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main-mobile-first.css">
+
 
 </head>
 
 <body>
 
-    <header>
+    <header role="banner">
         <div id="messageBox" class="demoMessage">
             <span>Loading ...</span>
         </div>
         <h1>What's next?</h1>
     </header>
 
-    <section class="main-image">
-        <h2>Has Someone recommended a TV show?<br><br>Let us help!</h2>
+    <section class="main-image" role="banner">
+        <h2>Has Someone recommended a TV show?</h2>
+        <h2>Let us help!</h2>
     </section>
-    <section class="form">
+    <section class="form" aria-live="assertive" role="form">
         <h2 class="form-description"> Find show description and ratings below! </h2>
         <form class="search-show">
-            <input type="text" class="show-name" value="" placeholder="Show name">
-            <input class="search-button" type="submit" value="Search">
+            <input type="text" class="show-name" value="" placeholder="Show name" role="dialog">
+            <input class="search-button" type="submit" value="Search" role="button">
         </form>
     </section>
 
 
-    <section class="result-section">
+    <section class="result-section" role="list">
 
 
 
