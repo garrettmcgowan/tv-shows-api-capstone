@@ -16,7 +16,6 @@ function getShowsFromApi(userInput) {
             /*set the call type GET / POST*/
             type: "GET"
         })
-
         /* if the call is successful (status 200 OK) show results */
         .done(function (result) {
             console.log(result);
@@ -25,11 +24,7 @@ function getShowsFromApi(userInput) {
             } else {
                 showResultsFromApi(result);
             }
-
         })
-
-
-
 }
 //Step 3: with api results display them to the user
 function showResultsFromApi(result) {
@@ -61,28 +56,28 @@ function showResultsFromApi(result) {
     $(".result-section").html(buildTheHtmlOutput);
     $('.result-section').show();
 }
-
+//Step 1: get input from user
+//form trigger
+function formSubListener() {
+    $(document).on('submit', '.search-show', function (event) {
+        event.preventDefault();
+        //    console.log("form submitted");
+        //    get the user input from the form
+        let userInput = $(".show-name").val();
+        //    console.log(userInput);
+        //    validate the input
+        if (userInput == "") {
+            displayError('Please search for show name')
+        } else {
+            getShowsFromApi(userInput);
+            $(".show-name").val('');
+        }
+    });
+}
 //part B: using global functions variables and objects(triggers)
 //when you load the page ...
 $(document).ready(function () {
     $("#messageBox").hide();
     $('.result-section').hide();
-});
-
-//Step 1: get input from user
-//form trigger
-$(document).on('submit', '.search-show', function (event) {
-    event.preventDefault();
-    //    console.log("form submitted");
-    //    get the user input from the form
-    let userInput = $(".show-name").val();
-    //    console.log(userInput);
-    //    validate the input
-    if (userInput == "") {
-        displayError('Please search for show name')
-    } else {
-        getShowsFromApi(userInput);
-        $(".show-name").val('');
-
-    }
+    formSubListener();
 });

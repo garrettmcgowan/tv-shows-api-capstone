@@ -48,15 +48,25 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    padding-top: 7%;
 }
 
-.main-image h2 {
+.main-image h2,
+.main-image h3 {
     text-align: center;
     font-size: 35px;
     color: white;
-    padding-top: 7%;
 
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.main-image h3 {
+    margin-top: 0;
 }
 
 h1 {
@@ -133,111 +143,20 @@ input {
     max-width: 1000px;
 }
 
-/*ipad lanscape / small laptop*/
-
-@media only screen and (max-width: 1024px) {
 
 
-    h1 {
-        font-size: 380%;
-        margin: 3%;
-    }
-    .form-description {
-        font-size: 200%;
-        margin-top: 5%;
-    }
-    .one-half {
-        width: 100%;
-    }
-    .one-half p {
-        font-size: 120%;
-    }
 
-    .main-image {
-        height: 600px;
-    }
-    .main-image h2 {
-        font-size: 190%
-    }
 
-    form {
-        font-size: 200%;
-        margin-top: 5%;
-    }
-    .one-half img {
-        width: 20%;
-    }
-    input {
-        min-height:
-    }
-}
-
-/*ipad potrait*/
-
-@media only screen and (max-width: 768px) {
-    .one-half p {
-        font-size: 110%;
-    }
-
-    h1 {
-        font-size: 380%;
-        margin: 4%;
-    }
-    .main-image {
-        height: 400px;
-    }
-    .main-image h2 {
-        font-size: 160%
-    }
-    .form-description {
-        font-size: 150%;
-        margin-top: 10%
-    }
-    form {
-        font-size: 150%;
-        margin-top: 10%;
-    }
-    .one-half img {
-        width: 25%;
-    }
-
-}
-
-/*iPhone landscape*/
-
-@media only screen and (max-width: 480px) {
-    h1 {
-        font-size: 300%;
-        margin: 5%
-    }
-    .one-half p {
-        font-size: 100%;
-    }
-    .main-image {
-        height: 300px;
-    }
-    .main-image h2 {
-        font-size: 135%
-    }
-    .form-description {
-        font-size: 115%;
-        margin-top: 15%
-    }
-    form {
-        font-size: 105%;
-        margin-top: 15%;
-    }
-
-}
 
 /*iPhone portrait*/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
     .main-image {
         height: 200px
     }
-    .main-image h2 {
-        font-size: 100%;
+    .main-image h2,
+    .main-image h3 {
+        font-size: 90%;
     }
     form {
         font-size: 80%;
@@ -248,6 +167,10 @@ input {
     }
     .one-half img {
         width: 50%
+    }
+    .one-half {
+        width: 100%;
+        display: block;
     }
 
     h1 {
@@ -262,5 +185,111 @@ input {
     }
     .one-half p {
         font-size: 75%;
+    }
+}
+
+/*iPhone landscape*/
+
+@media only screen and (min-width: 480px) {
+    h1 {
+        font-size: 300%;
+        margin: 5%
+    }
+
+
+    .one-half p {
+        font-size: 100%;
+    }
+    .main-image {
+        height: 300px;
+    }
+    .main-image h2,
+    .main-image h3 {
+        font-size: 115%
+    }
+    .form-description {
+        font-size: 115%;
+        margin-top: 15%
+    }
+    form {
+        font-size: 105%;
+        margin-top: 15%;
+    }
+
+}
+
+/*ipad potrait*/
+
+@media only screen and (min-width: 768px) {
+    .one-half p {
+        font-size: 110%;
+    }
+
+    h1 {
+        font-size: 380%;
+        margin: 4%;
+    }
+    .main-image {
+        height: 400px;
+    }
+    .main-image h2,
+    .main-image h3 {
+        font-size: 125%
+    }
+    .form-description {
+        font-size: 150%;
+        margin-top: 10%
+    }
+    form {
+        font-size: 150%;
+        margin-top: 10%;
+    }
+    .one-half img {
+        width: 25%;
+    }
+    .one-half {
+        width: 48%;
+        display: inline-block;
+    }
+}
+
+/*ipad lanscape / small laptop*/
+
+@media only screen and (min-width: 1024px) {
+
+
+    h1 {
+        font-size: 380%;
+        margin: 3%;
+    }
+    .form-description {
+        font-size: 200%;
+        margin-top: 5%;
+    }
+    .one-half {
+        width: 48%;
+        display: inline-block;
+    }
+    .one-half p {
+        font-size: 120%;
+    }
+
+    .main-image {
+        height: 600px;
+    }
+    .main-image h2,
+    .main-image h3 {
+        font-size: 150%
+    }
+
+    form {
+        font-size: 200%;
+        margin-top: 5%;
+    }
+    .one-half img {
+        width: 20%;
+    }
+    input {
+        min-height:
     }
 }
